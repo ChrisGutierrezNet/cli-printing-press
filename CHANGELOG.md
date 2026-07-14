@@ -1,5 +1,34 @@
 # Changelog
 
+## [4.29.0](https://github.com/mvanhorn/cli-printing-press/compare/v4.28.0...v4.29.0) (2026-07-14)
+
+
+### Features
+
+* **auth:** perms-check persisted token reads in generated config.Load / LoadCredentials ([#3596](https://github.com/mvanhorn/cli-printing-press/issues/3596)) ([63c3dc7](https://github.com/mvanhorn/cli-printing-press/commit/63c3dc748e0d4fcc1d899c167765ebdee98b3049))
+* **generator:** add xml response_format for XML-backed APIs ([#3065](https://github.com/mvanhorn/cli-printing-press/issues/3065)) ([cdf7f4c](https://github.com/mvanhorn/cli-printing-press/commit/cdf7f4cde83353de2d9389b5b2253e57204ebb9a))
+
+
+### Bug Fixes
+
+* **cli:** dedupe responsePathForResource switch cases ([#3530](https://github.com/mvanhorn/cli-printing-press/issues/3530)) ([5a23446](https://github.com/mvanhorn/cli-printing-press/commit/5a2344634f9f26527b21e36028b6995443a581fc))
+* **cli:** drop dangling ": " from APIError.Error() on empty response body ([#3545](https://github.com/mvanhorn/cli-printing-press/issues/3545)) ([a2f518f](https://github.com/mvanhorn/cli-printing-press/commit/a2f518f6825885fc79481c836e433d57318bb557)), closes [#2945](https://github.com/mvanhorn/cli-printing-press/issues/2945)
+* **cli:** follow generated pagination cursors safely ([#3601](https://github.com/mvanhorn/cli-printing-press/issues/3601)) ([4c9300f](https://github.com/mvanhorn/cli-printing-press/commit/4c9300f82f6fdef404099949add7adf0ef35eed8))
+* **cli:** gate nested required fields by parent ([#3585](https://github.com/mvanhorn/cli-printing-press/issues/3585)) ([7f7e0c4](https://github.com/mvanhorn/cli-printing-press/commit/7f7e0c4e9bb657877ba4621b11cbb6f5b8870023))
+* **cli:** harden generated MCP handlers ([#3586](https://github.com/mvanhorn/cli-printing-press/issues/3586)) ([339fdc6](https://github.com/mvanhorn/cli-printing-press/commit/339fdc6fb245357f8ba492e2fca6e59b2cc4e59a))
+* **cli:** honor pp:typed-exit-codes in live dogfood and complete learn-loop annotations ([#3556](https://github.com/mvanhorn/cli-printing-press/issues/3556)) ([19ffc5d](https://github.com/mvanhorn/cli-printing-press/commit/19ffc5d129054c4d612a11067f4155c7e313e2eb))
+* **cli:** improve which ranking and Google Discovery generation ([#3476](https://github.com/mvanhorn/cli-printing-press/issues/3476)) ([800d893](https://github.com/mvanhorn/cli-printing-press/commit/800d8936129bb9f8f644f32f957e0ba73d6947fc))
+* **cli:** keep browser-http ALPN on HTTP/1.1 ([#3599](https://github.com/mvanhorn/cli-printing-press/issues/3599)) ([3623e16](https://github.com/mvanhorn/cli-printing-press/commit/3623e16ebc7560346cf5b090800e0c2bb5b49ba0))
+* **cli:** normalize brand-named auth env vars ([#3595](https://github.com/mvanhorn/cli-printing-press/issues/3595)) ([91539d1](https://github.com/mvanhorn/cli-printing-press/commit/91539d107808ebe3f0c87f5e957a68d7183e6543))
+* **cli:** package manifest-selected manuscripts safely ([#3582](https://github.com/mvanhorn/cli-printing-press/issues/3582)) ([16b21f6](https://github.com/mvanhorn/cli-printing-press/commit/16b21f66411e9908677acd4a34e99b846bdb0ef3))
+* **cli:** persist OAuth token expiry in generated credentials ([#3533](https://github.com/mvanhorn/cli-printing-press/issues/3533)) ([e73f2f9](https://github.com/mvanhorn/cli-printing-press/commit/e73f2f9fe8d86e640ed72cd15ea1d33131b1c2f1))
+* **cli:** preserve generated credential aliases ([#3603](https://github.com/mvanhorn/cli-printing-press/issues/3603)) ([facf37a](https://github.com/mvanhorn/cli-printing-press/commit/facf37a65c6c2303105def21c2f86480f7a71081))
+* **cli:** rebuild stale live dogfood binaries ([#3579](https://github.com/mvanhorn/cli-printing-press/issues/3579)) ([7a5b90e](https://github.com/mvanhorn/cli-printing-press/commit/7a5b90e624a302df159e45f4d2ec91a052cd0671))
+* **cli:** redact credential tokens from proof samples ([#3580](https://github.com/mvanhorn/cli-printing-press/issues/3580)) ([3cc7089](https://github.com/mvanhorn/cli-printing-press/commit/3cc708940b522f485503c9f4a987603018cabe6b))
+* **cli:** serialize OpenAPI array query params ([#3583](https://github.com/mvanhorn/cli-printing-press/issues/3583)) ([e4389b4](https://github.com/mvanhorn/cli-printing-press/commit/e4389b4e2080bc52a5fd71cb7e5c0925dbcbfd48))
+* **cli:** verify generated TLS certificates by default ([#3605](https://github.com/mvanhorn/cli-printing-press/issues/3605)) ([18022d9](https://github.com/mvanhorn/cli-printing-press/commit/18022d9e44d4d6eb29de136cd20718875631a0e9))
+* **skills:** preserve runtime version layout on reprints ([#3578](https://github.com/mvanhorn/cli-printing-press/issues/3578)) ([9b81492](https://github.com/mvanhorn/cli-printing-press/commit/9b81492424fb46245fda0310fe39f8cdc515672c))
+
 ## [4.28.0](https://github.com/mvanhorn/cli-printing-press/compare/v4.27.1...v4.28.0) (2026-07-09)
 
 
